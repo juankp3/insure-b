@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'dmserifdisplayregular';
+    src: url('../font/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('woff2');
+}
+@font-face {
+    font-family: 'dmserifdisplayitalic';
+    src: url('../font/DM_Serif_Display/DMSerifDisplay-Italic.ttf') format('woff2');
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  width: 1113px;
+  margin: auto;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.header-logo{
+  display: inline-block;
+  width: 112px;
+  height: 18px;
+  background-size: cover;
+  margin: auto 0;
+}
+
+.header-nav{
+    /* background: yellow; */
+    display: flex;
+    margin: auto 0;
+}
+.header-nav__list{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0px;
+}
+.header-nav__item{
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.header-nav__item:last-child{
+  padding: 0px;
+}
+
+.header-nav__link{
+  font-family: 'dmserifdisplayregular';
+  font-size: 16px;
+  color: #78787A;
+  text-decoration: none;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header-nav__link:hover{
+  color: #2B282F;
+}
+
+.-primary a{
+  border: solid 1px #000000;
+  color: #000000;
+  padding: 0px 20px;
+}
+.-primary a:hover{
+  background: #2B282F;
+  color: #ffffff;
+}
