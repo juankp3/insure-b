@@ -142,3 +142,57 @@ body{
   width: 542px;
   margin-top: 105px;
 }
+
+
+
+
+
+/* FOOTER */
+.footer{
+ background-color: #ccc;
+}
+
+.redes{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.redes > .redes__item{
+  margin-left: 15px;
+}
+.footer-top{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #837d88;
+  height: 80px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-bottom__column > h3{
+  color: #78787A;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list__item{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.list__item > a{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
