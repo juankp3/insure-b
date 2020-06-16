@@ -15,7 +15,7 @@ body{
 .row{
   width: 1113px;
   margin: auto;
-  display: flex;
+  /* display: flex; */
   position: relative;
 }
 
@@ -25,6 +25,7 @@ body{
 }
 
 .header .row{
+  display: flex;
   justify-content: space-between;
 }
 
@@ -93,8 +94,9 @@ body{
 
 .banner{
   display: flex;
-  height: 600px;
-  background: #2C2640;
+}
+.banner .row{
+  display: flex;
 }
 .banner::after{
   content: "";
@@ -105,7 +107,24 @@ body{
   height: 516px;
   width: 436px;
 }
+.banner::before{
+  content: "";
+  display: block;
+  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+  position: absolute;
+  left: 0;
+  height: 504px;
+  width: 195px;
+  top: 503px;
+  z-index: 1;
+}
 
+.banner--backgroud{
+  background: #2C2640;
+  height: 600px;
+  width: 100%;
+  position: absolute;
+}
 .banner-info{
   margin-right: 30px;
   width: 100%;
@@ -118,11 +137,14 @@ body{
   flex-direction: column;
 }
 
-.banner-line{
+.line{
   border: solid 1px #ffffff;
   width: 152px;
   margin: 0;
   padding: 0;
+}
+.line.purple{
+  border: solid 1px #2C2640;
 }
 .banner-info--title{
   font-size: 70px;
@@ -141,4 +163,37 @@ body{
 .banner-img{
   width: 542px;
   margin-top: 105px;
+}
+
+.we-different{
+  margin-top: 150px;
+  display: flex;
+  margin-bottom: 150px;
+}
+.we-different__info{
+  /* display: flex; */
+}
+.we-different__title{
+  font-size: 70px;
+  line-height: 70px;
+  margin: 70px 0px 10px 0px;
+  padding: 0;
+}
+.steps{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.steps__list{
+  width: 330px;
+}
+.steps__title{
+  font-family: 'dmserifdisplayregular';
+  font-size: 25px;
+  font-weight: bold;
+}
+.steps__description{
+  color: #7E7E80;
+  font-size: 16px;
+  line-height: 25px;
 }
