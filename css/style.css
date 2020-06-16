@@ -15,20 +15,18 @@ body{
 .row{
   width: 1113px;
   margin: auto;
-  /* display: flex; */
   position: relative;
 }
 
+/* HEADER */
 .header{
   display: flex;
   height: 80px;
 }
-
 .header .row{
   display: flex;
   justify-content: space-between;
 }
-
 .header-logo{
   display: inline-block;
   width: 112px;
@@ -36,7 +34,6 @@ body{
   background-size: cover;
   margin: auto 0;
 }
-
 .header-nav{
     display: flex;
     margin: auto 0;
@@ -55,7 +52,6 @@ body{
 .header-nav__item:last-child{
   padding: 0px;
 }
-
 .header-nav__link{
   font-family: 'dmserifdisplayregular';
   font-size: 16px;
@@ -69,29 +65,7 @@ body{
   color: #2B282F;
 }
 
-.button{
-  border: solid 1px #000000;
-  color: #000000;
-  padding: 0px 20px;
-  height: 38px;
-  line-height: 40px;
-  display: inline-block;
-  text-decoration: unset;
-  text-transform: uppercase;
-}
-.button:hover{
-  background: #2B282F;
-  color: #ffffff;
-}
-.button.-white{
-  color: #ffffff;
-  border: solid 1px #ffffff;
-}
-.button.-white:hover{
-  background: #ffffff;
-  color: #2B282F;
-}
-
+/* BANNER */
 .banner{
   display: flex;
 }
@@ -118,12 +92,15 @@ body{
   top: 503px;
   z-index: 1;
 }
-
-.banner--backgroud{
+.banner__backgroud{
   background: #2C2640;
   height: 600px;
   width: 100%;
   position: absolute;
+}
+.banner__img{
+  width: 542px;
+  margin-top: 105px;
 }
 .banner-info{
   margin-right: 30px;
@@ -137,22 +114,13 @@ body{
   flex-direction: column;
 }
 
-.line{
-  border: solid 1px #ffffff;
-  width: 152px;
-  margin: 0;
-  padding: 0;
-}
-.line.purple{
-  border: solid 1px #2C2640;
-}
-.banner-info--title{
+.banner-info__title{
   font-size: 70px;
   line-height: 70px;
   margin: 70px 0px 10px 0px;
   padding: 0;
 }
-.banner-info--description{
+.banner-info__description{
   font-weight: lighter;
   font-family: sans-serif;
   font-size: 14px;
@@ -160,18 +128,11 @@ body{
   margin-bottom: 30px;
 }
 
-.banner-img{
-  width: 542px;
-  margin-top: 105px;
-}
-
+/* WE DIFFERENT */
 .we-different{
   margin-top: 150px;
   display: flex;
   margin-bottom: 150px;
-}
-.we-different__info{
-  /* display: flex; */
 }
 .we-different__title{
   font-size: 70px;
@@ -191,9 +152,44 @@ body{
   font-family: 'dmserifdisplayregular';
   font-size: 25px;
   font-weight: bold;
+  margin: 25px 0px;
 }
 .steps__description{
   color: #7E7E80;
   font-size: 16px;
   line-height: 25px;
+}
+
+/* HELPERS */
+
+.line{
+  border: solid 1px #ffffff;
+  width: 152px;
+  margin: 0;
+  padding: 0;
+}
+.line.purple{
+  border: solid 1px #2C2640;
+}
+.button{
+  border: solid 1px #000000;
+  color: #000000;
+  padding: 0px 20px;
+  height: 38px;
+  line-height: 40px;
+  display: inline-block;
+  text-decoration: unset;
+  text-transform: uppercase;
+}
+.button:hover{
+  background: #2B282F;
+  color: #ffffff;
+}
+.button.-white{
+  color: #ffffff;
+  border: solid 1px #ffffff;
+}
+.button.-white:hover{
+  background: #ffffff;
+  color: #2B282F;
 }
