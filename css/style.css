@@ -93,7 +93,7 @@ body{
   z-index: 1;
 }
 .banner__backgroud{
-  background: #2C2640;
+  background: #072434;
   height: 600px;
   width: 100%;
   position: absolute;
@@ -219,7 +219,7 @@ body{
 .footer{
   background-color: #FAFAFA;
  }
- 
+
  .redes{
    list-style: none;
    padding: 0;
@@ -238,7 +238,7 @@ body{
    border-bottom: solid 1px #837d88;
    height: 80px;
  }
- 
+
  .footer-bottom{
    display: flex;
    justify-content: space-between;
