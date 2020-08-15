@@ -2,10 +2,6 @@
     font-family: 'dmserifdisplayregular';
     src: url('../font/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('woff2');
 }
-@font-face {
-    font-family: 'dmserifdisplayitalic';
-    src: url('../font/DM_Serif_Display/DMSerifDisplay-Italic.ttf') format('woff2');
-}
 
 body{
   margin: 0px;
